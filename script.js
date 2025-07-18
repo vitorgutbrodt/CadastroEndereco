@@ -40,7 +40,7 @@ document.getElementById("cep").addEventListener("blur", (evento) => {
     .catch(error => console.error("Erro ao buscar o CEP", error));
 })
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => { // configurando DOM para manter informações do formulário na tela
     const ultimoCEP = localStorage.getItem("ultimoCEP");
 
     if (ultimoCEP) {
